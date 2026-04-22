@@ -3,9 +3,6 @@ from client import bc
 from orders import OS
 from logger_setup import setup_logger
 setup_logger()
-def get_input(prompt, default=None):
-    val = input(f"{prompt} [{default}]: ")
-    return val.strip() if val.strip() else default
 def parse_args():
     parser = argparse.ArgumentParser(description="Trading Bot CLI (Enhanced)")
     parser.add_argument("--symbol")
